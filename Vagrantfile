@@ -1,4 +1,3 @@
-
 # Override these values with a local config defined in VD_CONF
 conf = {
     'ip_prefix' => '192.168.27',
@@ -59,9 +58,9 @@ Vagrant::Config.run do |config|
     chef.run_list = [
       "recipe[vagrant-openstack::hostname]",
       "recipe[vagrant-openstack::cache]",
-      "recipe[vagrant-openstack::devstack-cache]",
+      #"recipe[vagrant-openstack::devstack-cache]",
       "recipe[devstack]",
-      "recipe[vagrant-openstack::devstack-update-cache]",
+      #"recipe[vagrant-openstack::devstack-update-cache]",
       #"recipe[vagrant-openstack::dotfiles]",
     ]
     chef.json.merge!({
