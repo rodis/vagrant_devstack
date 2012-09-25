@@ -4,7 +4,7 @@ conf = {
     'mac_prefix' => '080027027',
     'box_name' => 'precise',
     'box_url' => 'http://mmcclain.dreamhosters.com/precise.box',
-    'allocate_memory' => 1024,
+    'allocate_memory' => 2048,
     'cache_dir' => 'cache/',
     'ssh_dir' => '~/.ssh/',
 }
